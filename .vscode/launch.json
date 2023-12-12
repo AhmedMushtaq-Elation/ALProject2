@@ -7,7 +7,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "sandbox",
+            "environmentName": "Sandbox_Stage_12122023",
             "startupObjectId": 22,
             "startupObjectType": "Page",
             "breakOnError": "All",
@@ -16,4 +16,7 @@
             "enableSqlInformationDebugger": true
         }
     ]
+
+
+    
 }
