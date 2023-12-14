@@ -2,10 +2,12 @@ query 50100 "List of Five Top Customers"
 {
     Caption = 'List of Five Top Customers';
     QueryType = Normal;
-    
+    QueryCategory = 'Customer List';
+
     elements
     {
-        dataitem(Customer; Customer)
+        dataitem(Customer;
+        Customer)
         {
             column(Address; Address)
             {
@@ -24,9 +26,9 @@ query 50100 "List of Five Top Customers"
             }
         }
     }
-    
+
     trigger OnBeforeOpen()
     begin
-    
+
     end;
 }

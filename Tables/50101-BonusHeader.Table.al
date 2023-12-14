@@ -2,6 +2,8 @@ table 50101 "MNB Bonus Header"
 {
     Caption = 'Bonus';
     DataClassification = ToBeClassified;
+    DrillDownPageId = "MNB Bonus List";
+    LookupPageId = "MNB Bonus List";
 
     fields
     {
