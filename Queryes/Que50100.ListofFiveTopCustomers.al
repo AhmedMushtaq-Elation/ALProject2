@@ -1,3 +1,4 @@
+
 query 50100 "List of Five Top Customers"
 {
     Caption = 'List of Five Top Customers';
