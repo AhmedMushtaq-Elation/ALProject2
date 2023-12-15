@@ -1,5 +1,6 @@
-tableextension 50100 "Social Media" extends Customer
+tableextension 50100 "MNB Customer " extends Customer
 {
+
     fields
     {
         field(50100; Facebook; Text[50])
@@ -22,6 +23,26 @@ tableextension 50100 "Social Media" extends Customer
             Caption = 'GitHub';
             DataClassification = ToBeClassified;
         }
+        field(50104; "MNB Bonuse"; Integer)
+        {
+            Caption = 'Bonuses';
+            FieldClass = FlowField;
+            CalcFormula = count("MNB Bonus Header" where("Customer No." = field("No.")));
+            Editable = false;
+        }
 
     }
+    var
+        BonusExistsErr: Label '"You can not delete Customer %1 because there is at least one Bonuse assigned"';
+
+    trigger OnBeforeDelete()
+    var
+        "MNB Bonus Header": Record "MNB Bonus Header";
+    begin
+        "MNB Bonus Header".SetRange("Customer No.");
+
+        if not "MNB Bonus Header".IsEmpty() then
+            Error(BonusExistsErr, "No.");
+
+    end;
 }
