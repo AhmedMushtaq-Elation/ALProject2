@@ -39,7 +39,7 @@ tableextension 50100 "MNB Customer " extends Customer
     var
         "MNB Bonus Header": Record "MNB Bonus Header";
     begin
-        "MNB Bonus Header".SetRange("Customer No.");
+        "MNB Bonus Header".SetRange("Customer No.","No.");
 
         if not "MNB Bonus Header".IsEmpty() then
             Error(BonusExistsErr, "No.");

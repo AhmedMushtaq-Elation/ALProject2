@@ -1,8 +1,8 @@
-pageextension 50100 "MNB Customer List" extends "Customer List"
+pageextension 50101 "MNB Customer card" extends "Customer Card"
 {
     layout
     {
-        addlast(Control1)
+        addlast(Control10)
         {
             field(Facebook; Rec.Facebook)
             {

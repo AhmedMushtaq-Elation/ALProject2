@@ -7,7 +7,12 @@ codeunit 50102 "MNB Bonus Calculation"
     begin
         CalculateBonus(SalesInvLine);
     end;
-
+local procedure MyProcedure()
+var
+    myInt: Integer;
+begin
+    
+end;
     local procedure CalculateBonus(var SalesInvLine: Record "Sales Invoice Line")
     var
         MNBBonusHeader: Record "MNB Bonus Header";
@@ -57,7 +62,8 @@ codeunit 50102 "MNB Bonus Calculation"
         if MNBBonusEntry.FindLast() then
             EntryNo := MNBBonusEntry."Entry No." + 1
         else
-            EntryNo := 1;
+        EntryNo :=1;
+        
         MNBBonusEntry.Init();
         MNBBonusEntry."Entry No." := EntryNo;
         MNBBonusEntry."Bonus No." := MNBBonusLine."Document No.";

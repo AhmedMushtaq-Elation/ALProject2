@@ -13,6 +13,7 @@ page 50101 "MNB Bonus List"
     {
         area(Content)
         {
+
             repeater(Control1)
             {
                 field("No."; Rec."No.")
@@ -65,6 +66,23 @@ page 50101 "MNB Bonus List"
                 ToolTip = 'Open Customer Card.';
 
 
+            }
+            action(BonusEntries)
+            {
+                ApplicationArea = All;
+                Caption = 'Bonus Entries';
+                Image = Entry;
+                Promoted = true;
+                PromotedCategory = Process;
+                RunObject = page "MNB Bonus Entries";
+                RunPageLink = "Bonus No." = field("No.");
+                ToolTip = 'Opens bonus entries.';
+
+
+                trigger OnAction()
+                begin
+
+                end;
             }
         }
     }

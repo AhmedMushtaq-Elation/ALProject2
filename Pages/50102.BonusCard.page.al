@@ -78,6 +78,7 @@ page 50102 "MNB Bonus Card"
     {
         area(Navigation)
         {
+           
             action(customerCard)
             {
                 ApplicationArea = All;
