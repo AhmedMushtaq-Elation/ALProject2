@@ -60,6 +60,7 @@ report 50100 "MNB Bonus Overview"
 
             }
 
+
             dataitem("MNB Bonus Entry"; "MNB Bonus Entry")
             {
                 DataItemLink = "Bonus No." = field("No.");
@@ -83,11 +84,19 @@ report 50100 "MNB Bonus Overview"
                 }
 
             }
+            trigger OnAfterGetRecord()
+            var
+                MNBBonusEntry: Record "MNB Bonus Entry";
+            begin
+                MNBBonusEntry.CopyFilters("MNB Bonus Entry");
+                MNBBonusEntry.SetRange("Bonus No.", "No.");
+                MNBBonusEntry.CalcSums("Bonus Amount");
+                AmountSum := MNBBonusEntry."Bonus Amount";
+            end;
         }
     }
-
-
     var
+        AmountSum: Decimal;
         BonusNoCaptionLbl: Label 'Bonus No.';
         CustomerNoCaptionLbl: Label 'Customer No.';
         PostingDateCaptionLbl: Label 'Posting Date';
@@ -97,4 +106,9 @@ report 50100 "MNB Bonus Overview"
         StartingDateCaptionLbl: Label 'Starting Date';
         EndingDateCaptionLbl: Label 'Ending Date';
 
+
 }
+
+
+
+
