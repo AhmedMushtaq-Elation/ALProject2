@@ -4,7 +4,7 @@ report 50100 "MNB Bonus Overview"
     ApplicationArea = All;
     Caption = 'Bonus Overview';
     DefaultLayout = RDLC;
-    RDLCLayout = 'mnbbonus.rdl';
+    RDLCLayout = 'MNBBonus.rdl';
 
     dataset
     {
