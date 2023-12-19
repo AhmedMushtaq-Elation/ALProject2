@@ -83,6 +83,7 @@ report 50100 "MNB Bonus Overview"
 
                 }
 
+
             }
             trigger OnAfterGetRecord()
             var

@@ -81,8 +81,8 @@ page 50101 "MNB Bonus List"
 
                 trigger OnAction()
                 begin
-
                 end;
+
             }
         }
     }
