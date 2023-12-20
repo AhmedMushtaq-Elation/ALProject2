@@ -14,6 +14,12 @@ page 50105 ArithmeticOperators
                 field("Number 1"; "Number 1")
                 {
                     ApplicationArea = All;
+                    trigger OnValidate()
+                    var
+                        myInt: Integer;
+                    begin
+
+                    end;
 
                 }
                 field("Number 2"; "Number 2")
@@ -64,12 +70,12 @@ page 50105 ArithmeticOperators
             action(Multiplication)
             {
                 ApplicationArea = All;
-
                 trigger OnAction()
                 begin
                     Result := "Number 1" * "Number 2";
                 end;
             }
+
         }
     }
 
