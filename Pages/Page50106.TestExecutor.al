@@ -50,6 +50,15 @@ page 50106 TestExecutor
                 RunObject = codeunit ThirdTestCodeunit;
 
             }
+            action(FourthTestCodeunit)
+            {
+                ApplicationArea = All;
+                Caption = ' Test Page';
+                ToolTip = 'Execute Fourth Test Codeunit';
+                Image = ExecuteBatch;
+                RunObject = codeunit FourthTestCodeunit;
+
+            }
         }
     }
 
