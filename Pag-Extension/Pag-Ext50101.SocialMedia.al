@@ -25,6 +25,10 @@ pageextension 50101 "MNB Customer card" extends "Customer Card"
                 ApplicationArea = All;
                 ToolTip = 'show number of assgined to customer';
             }
+            // field("Lookup Value Code"; Rec."Lookup Value Code")
+            // {
+
+            // }
         }
     }
 

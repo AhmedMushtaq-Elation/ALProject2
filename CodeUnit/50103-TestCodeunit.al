@@ -20,5 +20,12 @@ codeunit 50103 TestCodeunit
         // [THEN] Then Expected Output 
         Error('Hahah SecondTestFunction');
     end;
+
+    trigger OnRun()
+    var
+        myInt: Integer;
+    begin
+
+    end;
 }
 

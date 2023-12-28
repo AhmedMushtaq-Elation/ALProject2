@@ -30,6 +30,10 @@ tableextension 50100 "MNB Customer " extends Customer
             CalcFormula = count("MNB Bonus Header" where("Customer No." = field("No.")));
             Editable = false;
         }
+        // field(50105; "Lookup Value Code"; Code[10])
+        // {
+        //     TableRelation = LookupValue;
+        // }
 
     }
     var
@@ -39,7 +43,7 @@ tableextension 50100 "MNB Customer " extends Customer
     var
         "MNB Bonus Header": Record "MNB Bonus Header";
     begin
-        "MNB Bonus Header".SetRange("Customer No.","No.");
+        "MNB Bonus Header".SetRange("Customer No.", "No.");
 
         if not "MNB Bonus Header".IsEmpty() then
             Error(BonusExistsErr, "No.");

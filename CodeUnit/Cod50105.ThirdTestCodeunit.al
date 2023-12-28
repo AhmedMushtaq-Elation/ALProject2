@@ -20,4 +20,11 @@ codeunit 50105 ThirdTestCodeunit
     begin
 
     end;
+
+    trigger OnRun()
+    var
+        myInt: Integer;
+    begin
+
+    end;
 }

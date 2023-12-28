@@ -20,4 +20,11 @@ codeunit 50104 SecondTestCodeunit
         // [THEN] Then Expected Output
         asserterror Error('Error : PositiveNegativeTestFunction');
     end;
+
+    trigger OnRun()
+    var
+        myInt: Integer;
+    begin
+
+    end;
 }

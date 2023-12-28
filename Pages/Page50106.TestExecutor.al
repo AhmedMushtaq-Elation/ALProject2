@@ -2,7 +2,7 @@ page 50106 TestExecutor
 {
     PageType = Card;
     ApplicationArea = All;
-    UsageCategory = Tasks;
+    UsageCategory = Administration;
     Caption = 'Test Executor';
 
 
