@@ -13,6 +13,10 @@ page 50101 "MNB Bonus List"
     {
         area(Content)
         {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
             repeater(Control1)
             {
                 field("No."; Rec."No.")
@@ -66,6 +70,26 @@ page 50101 "MNB Bonus List"
 
 
             }
+<<<<<<< HEAD
+=======
+            action(BonusEntries)
+            {
+                ApplicationArea = All;
+                Caption = 'Bonus Entries';
+                Image = Entry;
+                Promoted = true;
+                PromotedCategory = Process;
+                RunObject = page "MNB Bonus Entries";
+                RunPageLink = "Bonus No." = field("No.");
+                ToolTip = 'Opens bonus entries.';
+
+
+                trigger OnAction()
+                begin
+                end;
+
+            }
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
         }
     }
 

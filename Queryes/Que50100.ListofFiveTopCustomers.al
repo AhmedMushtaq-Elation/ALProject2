@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
 query 50100 "List of Five Top Customers"
 {
     Caption = 'List of Five Top Customers';
