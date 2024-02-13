@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+pageextension 50101 "Social Media" extends "Customer Card"
+{
+    layout
+    {
+        addlast(General)
+=======
 pageextension 50101 "MNB Customer card" extends "Customer Card"
 {
     layout
     {
         addlast(Control10)
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
         {
             field(Facebook; Rec.Facebook)
             {
@@ -20,16 +28,30 @@ pageextension 50101 "MNB Customer card" extends "Customer Card"
             {
                 ApplicationArea = All;
             }
+<<<<<<< HEAD
+=======
             field("MNB Bonuse"; Rec."MNB Bonuse")
             {
                 ApplicationArea = All;
                 ToolTip = 'show number of assgined to customer';
             }
+            // field("Lookup Value Code"; Rec."Lookup Value Code")
+            // {
+
+            // }
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
         }
     }
 
     actions
     {
+<<<<<<< HEAD
+        // Add changes to page actions here
+    }
+
+    var
+        myInt: Integer;
+=======
         addlast(navigation)
         {
             action("MNBBonuses")
@@ -44,4 +66,5 @@ pageextension 50101 "MNB Customer card" extends "Customer Card"
 
 
     }
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
 }

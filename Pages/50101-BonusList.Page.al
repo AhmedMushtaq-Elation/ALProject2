@@ -13,7 +13,10 @@ page 50101 "MNB Bonus List"
     {
         area(Content)
         {
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
             repeater(Control1)
             {
                 field("No."; Rec."No.")
@@ -67,7 +70,12 @@ page 50101 "MNB Bonus List"
 
 
             }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7f8e15037cf08f93cadaf1bcf3fc82111b0ee99b
             action(BonusEntries)
             {
                 ApplicationArea = All;
@@ -82,9 +90,10 @@ page 50101 "MNB Bonus List"
 
                 trigger OnAction()
                 begin
-
                 end;
+
             }
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
         }
     }
 

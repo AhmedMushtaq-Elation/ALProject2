@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "id": "75bc0665-9c41-4dee-b97c-d4523995fe7c",
   "name": "ALProject1",
   "publisher": "Default Publisher",
+=======
+  "id": "4e341f82-f7bd-4c24-9623-0e8574ed795d",
+  "name": "AhmedALProject1",
+  "publisher": "Publisher Ahmed",
+>>>>>>> 7f8e15037cf08f93cadaf1bcf3fc82111b0ee99b
   "version": "1.0.0.0",
   "brief": "",
   "description": "",
@@ -10,12 +16,19 @@
   "help": "",
   "url": "",
   "logo": "",
+<<<<<<< HEAD
   "dependencies": [
   
   ],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "14.0.0.0",
+=======
+  "dependencies":  [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "12.0.0.0",
+>>>>>>> 7f8e15037cf08f93cadaf1bcf3fc82111b0ee99b
   "idRanges": [
     {
       "from": 50100,

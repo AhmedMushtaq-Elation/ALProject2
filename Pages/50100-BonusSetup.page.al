@@ -23,7 +23,10 @@ page 50100 "MNB Bonus Setup"
                     ToolTip = 'Specifies number series what will be used for bonus numbers.';
 
                 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
             }
         }
     }

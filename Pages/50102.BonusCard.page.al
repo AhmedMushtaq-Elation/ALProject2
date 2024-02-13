@@ -52,7 +52,10 @@ page 50102 "MNB Bonus Card"
                 SubPageLink = "Document No." = field("No.");
             }
         }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
     }
 
     actions
@@ -60,7 +63,14 @@ page 50102 "MNB Bonus Card"
 
         area(Navigation)
         {
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+           
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
+>>>>>>> 7f8e15037cf08f93cadaf1bcf3fc82111b0ee99b
             action(customerCard)
             {
                 ApplicationArea = All;
@@ -71,6 +81,13 @@ page 50102 "MNB Bonus Card"
                 RunObject = page "customer Card";
                 RunPageLink = "No." = field("Customer No.");
                 ToolTip = 'Open Customer Card.';
+<<<<<<< HEAD
+
+
+            }
+        }
+    }
+=======
             }
             action(BonusEntries)
             {
@@ -103,6 +120,7 @@ page 50102 "MNB Bonus Card"
 
 
 
+>>>>>>> 9eec5a8b06c3635ee8d9a7abc73b64226577fd8f
 }
 
 // addafter("Open", "CheckConditionsOnOpen")
