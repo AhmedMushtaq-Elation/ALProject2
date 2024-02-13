@@ -5,8 +5,8 @@ page 50100 "MNB Bonus Setup"
     UsageCategory = Administration;
     SourceTable = "MNB Bouns Setup";
     Caption = 'Bonus Setup';
-    DeleteAllowed = false;
-    InsertAllowed = false;
+    // DeleteAllowed = true;
+    // InsertAllowed = true;
 
     layout
     {
@@ -15,9 +15,11 @@ page 50100 "MNB Bonus Setup"
             group(Numbering)
             {
                 Caption = 'Numbering';
-                field("Bonus Nos."; 'Bonus Nos.')
+                Editable = true;
+                field("Bonus Nos."; Rec."Bonus Nos")
                 {
                     ApplicationArea = All;
+                    Editable = true;
                     ToolTip = 'Specifies number series what will be used for bonus numbers.';
 
                 }
@@ -46,13 +48,17 @@ page 50100 "MNB Bonus Setup"
         myInt: Integer;
 
     trigger OnOpenPage()
+    var
+        Bonussetup: Record "MNB Bouns Setup";
     begin
+        Bonussetup.Reset();
+        if not Bonussetup.Get() then begin
+            Bonussetup.init();
+            Bonussetup.insert();
+        end;
 
-        rec.Reset();
-        if not rec.Get() then begin
-            rec.Init();
-            rec.Insert();
-        end
+
+
     end;
 
 }

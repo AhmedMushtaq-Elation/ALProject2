@@ -67,6 +67,7 @@ page 50101 "MNB Bonus List"
 
 
             }
+
             action(BonusEntries)
             {
                 ApplicationArea = All;

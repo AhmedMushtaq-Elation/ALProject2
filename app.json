@@ -1,6 +1,6 @@
 {
-  "id": "4e341f82-f7bd-4c24-9623-0e8574ed795d",
-  "name": "ALProject2",
+  "id": "75bc0665-9c41-4dee-b97c-d4523995fe7c",
+  "name": "ALProject1",
   "publisher": "Default Publisher",
   "version": "1.0.0.0",
   "brief": "",
@@ -10,22 +10,20 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+  "dependencies": [
+  
+  ],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "23.0.0.0",
+  "application": "14.0.0.0",
   "idRanges": [
     {
       "from": 50100,
       "to": 50149
     }
   ],
-  "resourceExposurePolicy": {
-    "allowDebugging": true,
-    "allowDownloadingSource": true,
-    "includeSourceInSymbolFile": true
-  },
-  "runtime": "12.0",
+
+  "runtime": "3.2",
   "features": [
     "NoImplicitWith"
   ]

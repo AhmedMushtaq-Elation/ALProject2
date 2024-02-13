@@ -18,7 +18,7 @@ end;
         MNBBonusHeader: Record "MNB Bonus Header";
     begin
         if SalesInvLine.Type <> SalesInvLine.Type::Item then
-            exit;
+             exit;
 
         MNBBonusHeader.SetRange("Customer No.", SalesInvLine."Bill-to Customer No.");
         MNBBonusHeader.SetRange(Status, MNBBonusHeader.Status::Released);

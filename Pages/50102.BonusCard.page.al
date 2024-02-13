@@ -1,5 +1,6 @@
 page 50102 "MNB Bonus Card"
 {
+    UsageCategory = Documents;
     ApplicationArea = All;
     Caption = ' Bonus Card';
     PageType = Document;
@@ -16,12 +17,15 @@ page 50102 "MNB Bonus Card"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the bonus number.';
+
                 }
 
                 field("Customer No."; Rec."Customer No.")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the customer number.';
+
+
                 }
                 field("Ending Date"; Rec."Ending Date")
                 {
@@ -39,31 +43,7 @@ page 50102 "MNB Bonus Card"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the bonus Status.';
                 }
-                field(SystemCreatedAt; Rec.SystemCreatedAt)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the SystemCreatedAt field.';
-                }
-                field(SystemCreatedBy; Rec.SystemCreatedBy)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the SystemCreatedBy field.';
-                }
-                field(SystemId; Rec.SystemId)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the SystemId field.';
-                }
-                field(SystemModifiedAt; Rec.SystemModifiedAt)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the SystemModifiedAt field.';
-                }
-                field(SystemModifiedBy; Rec.SystemModifiedBy)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the SystemModifiedBy field.';
-                }
+
             }
 
             part(Lines; "MNB Bonus Subform")
@@ -74,11 +54,13 @@ page 50102 "MNB Bonus Card"
         }
 
     }
+
     actions
     {
+
         area(Navigation)
         {
-           
+
             action(customerCard)
             {
                 ApplicationArea = All;
@@ -102,13 +84,45 @@ page 50102 "MNB Bonus Card"
                 ToolTip = 'Opens bonus entries.';
 
 
-                trigger OnAction()
-                begin
-
-                end;
             }
+
         }
     }
+    // trigger OnModifyRecord(): Boolean
+    // var
+    //     FirstTaskTable: Record FirstTaskTable;
+    //     MNBBonusHeader: Record "MNB Bonus Header";
+    //     MNBBonusLine: Record "MNB Bonus Line";
+    // begin
+
+    //     if (MNBBonusHeader."Customer No." = FirstTaskTable."Customer No.")
+    //     and (MNBBonusLine."Item No." = FirstTaskTable."Item No.") then
+    //         Error('ERRor : Cannot Have Bounus for Customer No. 10000 and Item No. 1906.');
+
+    // end;
+
 
 
 }
+
+// addafter("Open", "CheckConditionsOnOpen")
+//         {
+//             ApplicationArea = All;
+//             trigger OnAction()
+//             var
+//                 CustomerRec: Record Customer;
+//                 ItemRec: Record Item;
+//             begin
+//                 // Retrieve selected customer and item information
+//                 CustomerRec.Get("No.", SelectedCustomerID);
+//                 ItemRec.Get("No.", SelectedItemID);
+
+//                 // Check if customer number is 10000 and item number is 1906
+//                 if CustomerRec."No." = 10000 and ItemRec."No." = 1906 then
+//                 begin
+//                     Error('Cannot open page for Customer No. 10000 and Item No. 1906.');
+//                 end;
+//             end;
+//         }
+
+

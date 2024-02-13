@@ -14,7 +14,7 @@ table 50100 "MNB Bouns Setup"
         }
         field(2; "Bonus Nos"; Code[20])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             TableRelation = "No. Series";
             Caption = 'Bonus Nos.';
 

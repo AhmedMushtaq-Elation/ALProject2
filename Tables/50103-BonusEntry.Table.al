@@ -84,3 +84,18 @@ table 50103 "MNB Bonus Entry"
     end;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

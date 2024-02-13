@@ -1,22 +1,24 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "Microsoft cloud sandbox",
+            "name": "localhost",
             "request": "launch",
             "type": "al",
-            "environmentType": "Sandbox",
-            "environmentName": "Sandbox_Stage_12122023",
-            "startupObjectId": 50100,
+            "environmentType": "OnPrem",
+            "server": "http://localhost:8081/YOGBC142Web/",
+             "serverInstance": "YOGBC142",
+             "port": 14259,
+            "authentication": "Windows",
+            "startupObjectId": 22,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true
+            "enableSqlInformationDebugger": true,
+            //"tenant": "default",
+            "usePublicURLFromServer": true,
+            "schemaUpdateMode": "ForceSync"
         }
     ]
-
-
-    
 }

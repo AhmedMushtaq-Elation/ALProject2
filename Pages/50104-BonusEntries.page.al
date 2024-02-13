@@ -57,22 +57,5 @@ page 50104 "MNB Bonus Entries"
         }
     }
 
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
 
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
-    }
-
-    var
-        myInt: Integer;
 }
